@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/language.xsd" languagecode="de">
+	<import>
+		<category name="wcf.acp.option">
+            <item name="wcf.acp.option.monero_address"><![CDATA[Monero Mainaddress]]></item>
+            <item name="wcf.acp.option.monero_address.description"><![CDATA[The main address starts with the number 4. ex: 464f3RLcqZpT26bs275hx9c7Ni9d5mfEE21YH5KpmaqrBhtkmz8Ld9jBr71XSD2LayQKwSkqyq295KEF8LXuTPxfJ5X757b]]></item>
+			<item name="wcf.acp.option.monero_view_key"><![CDATA[Secret View-Key]]></item>
+            <item name="wcf.acp.option.monero_view_key.description"><![CDATA[IMPORTANT: The <a class="externalURL" href="https://www.getmonero.org/resources/moneropedia/viewkey.html" target="_blank">View Key</a> is entered here, this is how the transactions of the Monero address are viewed.]]></item>
+			<item name="wcf.acp.option.monero_web_node"><![CDATA[Web-Node]]></item>
+            <item name="wcf.acp.option.monero_web_node.description"><![CDATA[(optional) The specified node must be web compatible. If it is not available, a randomly selected web node from <a class="externalURL" href="https://monero.fail/?chain=monero&network=mainnet&cors=on" target="_blank">moner.fail</a> will be used.]]></item>
+            <item name="wcf.acp.option.coingecko_api_key"><![CDATA[CoinGecko PRO - API Key]]></item>
+            <item name="wcf.acp.option.coingecko_api_key.description"><![CDATA[(optional) This will remove the visible <a class="externalURL" href="https://www.coingecko.com/branding" target="_blank">CoinGecko</a> mention.]]></item>
+		</category>
+
+        <category name="wcf.payment">
+            <item name="wcf.payment.de.xblackeye.wcf.payment.method.moneroLight"><![CDATA[Monero (XMR)]]></item>
+            <item name="wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.description"><![CDATA[Send the Monero (XMR) to the receiver address given below. Then confirm the transaction by entering the transaction ID, key and block amount. The 7th confirmation completes the Monero transaction. The current status of a transaction can be checked via your own wallet or a block explorer (<a class="externalURL" href="https://blockchair.com/monero" target="_blank" rel="nofollow">blockchair.com</a>).]]></item>
+            <item name="wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.xmr"><![CDATA[XMR]]></item>
+            <item name="wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.box.title"><![CDATA[Finalize transaction]]></item>
+            <item name="wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.amount"><![CDATA[Amount]]></item>
+            <item name="wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.address"><![CDATA[Monero Receiver address]]></item>
+            <item name="wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.amount.description"><![CDATA[Data provided by <a class="externalURL" href="https://www.coingecko.com/en/coins/monero" target="_blank">CoinGecko</a>]]></item>
+            <item name="wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.time"><![CDATA[Time remaining until transaction data input is complete]]></item>
+            <item name="wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.transactionOvertime"><![CDATA[The transaction can no longer be completed. To repeat the process, the page must be reloaded.]]></item>
+            <item name="wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.transactionID"><![CDATA[Transaction-ID]]></item>
+            <item name="wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.transactionKey"><![CDATA[Transaction-Key]]></item>
+            <item name="wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.blockHeight"><![CDATA[Block height]]></item>
+
+            <item name="wcf.payment.moneroLight.button.purchase.copy"><![CDATA[Copy XMR amount to clipboard]]></item>
+            <item name="wcf.payment.moneroLight.button.purchase"><![CDATA[Buy with Monero (XMR)]]></item>
+            <item name="wcf.payment.moneroLight.button.purchase.completeTransaction"><![CDATA[Confirm Monero (XMR) transaction]]></item>
+			<item name="wcf.payment.moneroLight.button.purchaseAgain.info"><![CDATA[You have made a recent purchase ({@$paidSubscriptionTransactionLog->logTime|time}). At least 30 minutes must pass before the order is canceled and can be made again.]]></item>
+        </category>
+	</import>
+</language>
