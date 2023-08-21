@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/option.xsd">
+	<import>
+		<options>
+			<option name="monero_address">
+				<categoryname>general.payment</categoryname>
+				<optiontype>text</optiontype>
+			</option>
+
+			<option name="monero_view_key">
+				<categoryname>general.payment</categoryname>
+				<optiontype>text</optiontype>
+			</option>
+
+			<option name="monero_web_node">
+				<categoryname>general.payment</categoryname>
+				<optiontype>text</optiontype>
+			</option>
+
+			<option name="coingecko_api_key">
+				<categoryname>general.payment</categoryname>
+				<optiontype>text</optiontype>
+			</option>
+		</options>
+	</import>
+</data>
