@@ -17,22 +17,22 @@
 				<dd><span id="xmr-amount">Monero Betrag</span>&nbsp;{lang}wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.xmr{/lang}&nbsp;&nbsp;&nbsp;<button class="small CopyToClipboard" id="copyToClipboard" data-url="Monero Betrag">{lang}wcf.payment.moneroLight.button.purchase.copy{/lang}</button><br/><small>{lang}wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.amount.description{/lang}</small></dd></dd>
 
 				<dt>{lang}wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.address{/lang}</dt>
-				<dd><input class="long" type="text" name="moneroAddress" value="{MONERO_ADDRESS}" disabled></dd>
+				<dd><input class="long" type="text" name="moneroAddress" value="{MONERO_ADDRESS}" readonly></dd>
 
 				<dt>{lang}wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.transactionID{/lang}</dt>
-				<dd><input class="long" type="text" name="moneroTxID" id="moneroTxID" value="" placeholder="c0fa90648d799fc3e41683663dfef93a1fcca7fea9bf1eae3136dd71270ce7be"></dd>
+				<dd><input class="long" type="text" name="moneroTxID" id="moneroTxID" value="" placeholder="c0fa90648d799fc3e41683663dfef93a1fcca7fea9bf1eae3136dd71270ce7be" required></dd>
 
 				<dt>{lang}wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.transactionKey{/lang}</dt>
-				<dd><input class="long" type="text" name="moneroTxKey" id="moneroTxKey" value="" placeholder="ff7235e8c615dac88f3548ebf71eb985af037e318488f7798b23707c7622c801"></dd>
+				<dd><input class="long" type="text" name="moneroTxKey" id="moneroTxKey" value="" placeholder="ff7235e8c615dac88f3548ebf71eb985af037e318488f7798b23707c7622c801" required></dd>
 
 				<dt>{lang}wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.blockHeight{/lang}</dt>
-				<dd><input class="long" type="number" name="moneroBlockHeight" id="moneroBlockHeight" value="" placeholder="2948393" min="2948393" max="3948393"></dd>
+				<dd><input class="long" type="number" name="moneroBlockHeight" id="moneroBlockHeight" value="" placeholder="2948393" min="2948393" max="3948393" required></dd>
 			</dl>
 		</section>
 		
 		<div class="formSubmit">
             {if newPurchase}
-			    <input type="submit" id="moneroPurchaseSubmitBtn" value="{lang}wcf.payment.moneroLight.button.purchase{/lang}" accesskey="s">
+			    <input type="submit" id="moneroPurchaseSubmitBtn" value="{lang}wcf.payment.moneroLight.button.purchase.completeTransaction{/lang}" accesskey="s">
 			{/if}
 			<input type="hidden" name="cost" value="{$cost}">
 			<input type="hidden" name="currency" value="{$currency}">
