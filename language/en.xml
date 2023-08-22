@@ -26,8 +26,8 @@
             <item name="wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.transactionKey"><![CDATA[Transaction-Key]]></item>
             <item name="wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.blockHeight"><![CDATA[Block height]]></item>
 
-            <item name="wcf.payment.moneroLight.button.purchase.copy"><![CDATA[Copy XMR amount to clipboard]]></item>
-            <item name="wcf.payment.moneroLight.button.purchase"><![CDATA[Buy with Monero (XMR)]]></item>
+            <item name="wcf.payment.moneroLight.button.purchase.copy"><![CDATA[Copy to clipboard]]></item>
+            <item name="wcf.payment.moneroLight.button.purchase"><![CDATA[Subscribe with Monero (XMR)]]></item>
             <item name="wcf.payment.moneroLight.button.purchase.completeTransaction"><![CDATA[Confirm Monero (XMR) transaction]]></item>
 			<item name="wcf.payment.moneroLight.button.purchaseAgain.info"><![CDATA[You have made a recent purchase ({@$paidSubscriptionTransactionLog->logTime|time}). At least 30 minutes must pass before the order is canceled and can be made again.]]></item>
         </category>

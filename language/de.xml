@@ -26,8 +26,8 @@
             <item name="wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.transactionKey"><![CDATA[Transaktions-Key]]></item>
             <item name="wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.blockHeight"><![CDATA[Blockhöhe]]></item>
 
-            <item name="wcf.payment.moneroLight.button.purchase.copy"><![CDATA[XMR Betrag in die Zwischenablage kopieren]]></item>
-            <item name="wcf.payment.moneroLight.button.purchase"><![CDATA[Mit Monero (XMR) kaufen]]></item>
+            <item name="wcf.payment.moneroLight.button.purchase.copy"><![CDATA[In die Zwischenablage kopieren]]></item>
+            <item name="wcf.payment.moneroLight.button.purchase"><![CDATA[Via Monero (XMR) kaufen]]></item>
             <item name="wcf.payment.moneroLight.button.purchase.completeTransaction"><![CDATA[Monero (XMR) Transaktion bestätigen]]></item>
 			<item name="wcf.payment.moneroLight.button.purchaseAgain.info"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Du hast{else}Sie haben{/if} erst kürzlich einen Kauf getätigt ({@$paidSubscriptionTransactionLog->logTime|time}). Es müssen mindestens 30 Minuten vergehen, bevor die Bestellung storniert wird und erneut durchgeführt werden kann.]]></item>
         </category>

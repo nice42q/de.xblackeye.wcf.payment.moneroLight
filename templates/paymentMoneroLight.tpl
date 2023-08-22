@@ -14,18 +14,18 @@
 				<dd id="moneroTimer"></dd>
 
 				<dt>{lang}wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.amount{/lang}</dt>
-				<dd><span id="xmr-amount">Monero Betrag</span>&nbsp;{lang}wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.xmr{/lang}&nbsp;&nbsp;&nbsp;<button class="small CopyToClipboard" id="copyToClipboard" data-url="Monero Betrag">{lang}wcf.payment.moneroLight.button.purchase.copy{/lang}</button><br/><small>{lang}wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.amount.description{/lang}</small></dd></dd>
-
+				<dd style="display: flex;margin-bottom: 0px;"><input class="long" type="text" name="xmr-amount" value="Monero Betrag" id="xmr-amount" style="border-right:0px;" readonly><input style="color: #4c4c4c !important;width: 72px;text-align: center;font-weight: bold;" type="text" value="{lang}wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.xmr{/lang}" readonly><button style="border-radius: 0px 2px 2px 0px;" class="small CopyToClipboard" id="copyToClipboard" data-text="Monero Betrag">{lang}wcf.payment.moneroLight.button.purchase.copy{/lang}</button></dd>
+				<dd><small>{lang}wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.amount.description{/lang}</small></dd>
 				<dt>{lang}wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.address{/lang}</dt>
-				<dd><input class="long" type="text" name="moneroAddress" value="{MONERO_ADDRESS}" readonly></dd>
+				<dd style="display: flex;"><input class="long" type="text" name="moneroAddress" value="{MONERO_ADDRESS}" readonly><button style="border-radius: 0px 2px 2px 0px;" class="small CopyToClipboard" id="copyToClipboard" data-text="{MONERO_ADDRESS}">{lang}wcf.payment.moneroLight.button.purchase.copy{/lang}</button></dd>
 
-				<dt>{lang}wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.transactionID{/lang}</dt>
+				<dt>{lang}wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.transactionID{/lang}&nbsp;<span class="formFieldRequired">*</span></dt>
 				<dd><input class="long" type="text" name="moneroTxID" id="moneroTxID" value="" placeholder="c0fa90648d799fc3e41683663dfef93a1fcca7fea9bf1eae3136dd71270ce7be" required></dd>
 
-				<dt>{lang}wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.transactionKey{/lang}</dt>
+				<dt>{lang}wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.transactionKey{/lang}&nbsp;<span class="formFieldRequired">*</span></dt>
 				<dd><input class="long" type="text" name="moneroTxKey" id="moneroTxKey" value="" placeholder="ff7235e8c615dac88f3548ebf71eb985af037e318488f7798b23707c7622c801" required></dd>
 
-				<dt>{lang}wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.blockHeight{/lang}</dt>
+				<dt>{lang}wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.blockHeight{/lang}&nbsp;<span class="formFieldRequired">*</span></dt>
 				<dd><input class="long" type="number" name="moneroBlockHeight" id="moneroBlockHeight" value="" placeholder="2948393" min="2948393" max="3948393" required></dd>
 			</dl>
 		</section>
@@ -84,7 +84,7 @@ var x = setInterval(function() {
             button.addEventListener('click', (event) => {
                 event.preventDefault();
 
-                void copyTextToClipboard(button.dataset.url).then(() => {
+                void copyTextToClipboard(button.dataset.text).then(() => {
                     UiNotification.show('{jslang}wcf.global.success{/jslang}');
                 });
             });
