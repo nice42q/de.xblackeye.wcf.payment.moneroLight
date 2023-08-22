@@ -7,7 +7,6 @@
 		{if $paidSubscriptionTransactionLog && $paidSubscriptionTransactionLog->logMessage == 'open'}<p class="info">{lang}wcf.payment.moneroLight.button.purchaseAgain.info{/lang}</p>{/if}
 		
 		<section class="section">
-			<h2 class="sectionTitle"><img src="/images/payments/monero.png" style="max-height: 20px;margin-right: 10px;">{lang}wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.box.title{/lang}</h2>
 			<span>{lang}wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.description{/lang}</span>
 			<dl>
 				<dt>{lang}wcf.payment.de.xblackeye.wcf.payment.method.moneroLight.time{/lang}</dt>
