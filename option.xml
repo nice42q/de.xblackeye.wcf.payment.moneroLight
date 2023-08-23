@@ -27,6 +27,11 @@
 				<optiontype>textarea</optiontype>
 				<hidden>1</hidden>
 			</option>
+			<option name="coingecko_last_time">
+				<categoryname>general.payment</categoryname>
+				<optiontype>integer</optiontype>
+				<hidden>1</hidden>
+			</option>
 		</options>
 	</import>
 </data>
