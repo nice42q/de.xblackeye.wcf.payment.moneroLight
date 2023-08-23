@@ -21,6 +21,14 @@
 				<categoryname>general.payment</categoryname>
 				<optiontype>text</optiontype>
 			</option>
+
+			<option name="coingecko_fiat_to_xmr">
+				<categoryname>general.payment</categoryname>
+				<optiontype>textarea</optiontype>
+				<defaultvalue><![CDATA[EUR:1.00
+				USD:1.00]]></defaultvalue>
+				<hidden>1</hidden>
+			</option>
 		</options>
 	</import>
 </data>
