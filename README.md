@@ -2,6 +2,8 @@
 ## Good to know
 https://docs.woltlab.com/5.5/
 
+https://manual.woltlab.com/en/requirements/
+
 Download: https://www.woltlab.com/en/woltlab-suite-download/
 
 GitHub: https://github.com/WoltLab/WCF
